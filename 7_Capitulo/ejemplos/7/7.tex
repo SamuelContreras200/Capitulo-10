@@ -1,0 +1,84 @@
+
+\textbf{Ejemplo 7}\\
+Una persona solicita a una entidad bancaria un préstamo por  COP  500.000. Lo cancelará en pagos trimestrales, durante un año, con amortización constante a capital e intereses del 33\% nominal anual trimestres anticipado. Elaborar una tabla de amortización.\\
+
+
+%\newpage %USAR SOLO SI EL SOLUCIÓN QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+
+\textbf{Solución 7}\\
+%La tabla ira centrada
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	%Creación de la cuadricula de 3 columnas
+	\begin{longtable}[H]{|c|c|c|}
+		%Creamos una linea horizontal
+		\hline
+		%Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO ASIGNACIÓN período FOCAL %%%%%%%
+		%%%%%%%%%% INICIO TITULO
+		%Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		\multicolumn{3}{|c|}{$pf : 0 \textit{ pmv}$}\\ \hline
+		%%%%%%%%%% INICIO TITULO
+		%Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO DE MATEMÁTICAS
+		%Cada & hace referencia al paso de la siguiente columna
+		\cellcolor[HTML]{FFB183}\textbf{Valores monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Valores no monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Incógnitas}  \\ \hline
+	 	$ \hspace{1cm} VP= 500$.$000 \ COP \hspace{1cm}$ & $\hspace{1.5cm} i_a = 8.25\% \textit{ pta} \hspace{1.5cm}$ & $ R_1=\textit{?COP} $ \\
+	 	& $\hspace{1.5cm} j_a = 33\% \textit{ nata} \hspace{1.5cm}$ & $ R_2=\textit{?COP} $ \\
+	 	& $\hspace{1.5cm} n = 4 \textit{ pta} \hspace{1.5cm}$ & $ R_3=\textit{?COP} $ \\
+	 	& $\hspace{1.5cm} A = \textit{ Constante} \hspace{1.5cm}$ & $ R_4=\textit{?COP} $ \\ \hline
+		%%%%%%%%%% FIN DE MATEMÁTICAS
+		%%%%% FIN DECLARACIÓN DE VARIABLES
+		
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
+		\multicolumn{3}{|c|}{ \includegraphics[trim=-78 -5 -78 -5]{7_Capitulo/img/ejemplos/7/7_1.pdf} }   \\ \hline
+		%%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}} \\ \hline
+		%%%%%%%%%%%%% FIN INSERCIÓN DE IMAGEN
+		%%%%%FIN FLUJO DE CAJA
+		
+		\multicolumn{3}{|c|}{ $ I = P i $ monto de intereses periódicos }   \\ 
+		\multicolumn{3}{|c|}{ $ A = \frac{V P}{n} $ Amortización de capital iguales en n períodos, variará el monto de los intereses}   \\ 
+		\multicolumn{3}{|c|}{ $R = A + I $  Valor de cuotas seriales fijas}   \\ \hline
+		
+		%%%%%% INICIO DESARROLLO MATEMÁTICO
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}       \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO MATEMÁTICAS
+		\multicolumn{3}{|c|}{ $ A = \frac{500.000 }{4} \hspace{1mm} pta =  125$.$000 \hspace{1mm} COP$}   \\ 
+		\multicolumn{3}{|c|}{ $R_{1} =   125$.$000 \hspace{1mm} COP  +  375$.$000( 0,0825) \hspace{1mm} COP$ }   \\ 
+		\multicolumn{3}{|c|}{ $R_{1} =   155$.$937,50 \hspace{1mm} COP$ }   \\
+		\multicolumn{3}{|c|}{ $R_{2} =   146$.$625 \hspace{1mm} COP$ }   \\
+		\multicolumn{3}{|c|}{ $R_{3} =   135$.$912,50 \hspace{1mm} COP$ }   \\
+		\multicolumn{3}{|c|}{ $R_{4} =   125$.$000 \hspace{1mm} COP$ }   \\ \hline
+		
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% FIN DESARROLLO MATEMÁTICO
+		%%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO RESPUESTA MATEMÁTICA
+		\multicolumn{3}{|c|}{ \includegraphics[trim=-78 -5 -78 -5]{7_Capitulo/img/ejemplos/7/7_2.pdf} }   \\ \hline
+		
+		
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% FIN RESPUESTA
+	\end{longtable}
+	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline %USARLO SI CREES QUE ES NECESARIO
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,56 @@
+\part{Capítulo diez}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 10
+%----------------------------------------------------------------------------------------
+
+\graphicspath{ {10_Capitulo/img/ejemplos/},{10_Capitulo/img/explicacion/}, {W_Varios/2_Portada_capitulos/} }
+
+
+\chapterimage{ima2} % Chapter heading image
+
+\chapter{Costo anual uniforme equivalente}
+
+\section{Mapa Mental }
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=4.5cm]{Mapa Mental 10.1.png}\\
+	\caption{Mapa mental CAUE}
+\end{figure}
+
+\section{Introducción}
+
+
+El Costo Anual Uniforme Equivalente (CAUE), se basa en llevar todos los ingresos y egresos a una serie uniforme equivalente de pagos, de esta manera, los costos durante un año de una opción A se comparan con los costos durante un año de otra opción B.
+Normalmente, el periodo de comparación es un año, no obstante, puede darse el caso de utilizar un periodo diferente, como es el caso del Costo Mensual Uniforme Equivalente (CMUE).
+\\\\
+La ventaja principal de este índice, es que no exige la toma de tiempos iguales como en el caso del valor presente neto (VPN), sino que únicamente se comparan los costos que en forma equivalente se hayan causado durante un año. También puede ser utilizado en aquellos casos en los que el uso del valor presente neto (VPN) se torna dispendioso, como el cálculo del mínimo común múltiplo de las vidas útiles de diferentes opciones para un ejercicio.
+
+\newpage
+\section{Fórmulas}
+\textbf{Formula general del CAUE}\newline
+
+\begin{equation*}
+	\textbf{CAUE} = \textbf{VPN}\left[ \frac{i(1+i)^n}{(1+i)^n-1}\right]
+\end{equation*}
+\\
+Donde \textit{i} corresponde a la tasa de interés y \textit{n} a los periodos a evaluar.
+\\
+
+\textbf{CAUE expresado como una Sumatoria}\newline
+
+\begin{equation*}
+	CAUE = \sum Ingresos_{anualizados} - \sum Egresos_{anualizados}
+\end{equation*}
+\\
+El Costo Anual Uniforme Equivalente (CAUE) puede ser expresado mediante la anualización de todos los costos asociados a un proyecto, sumando posteriormente estos valores. En este contexto, los ingresos se representan con un signo positivo (+), mientras que los egresos se expresan con un signo negativo (-).
+\\\\
+Es importante recordar que el CAUE tiene aplicaciones en gestión y planeación de proyectos, si el resultado es positivo quiere decir que los ingresos son superiores a los egresos por tal motivo el proyecto puede llevarse a cabo, si su resultado es negativo quiere decir que los ingresos son inferiores que los egresos por consiguiente el proyecto no debe llevarse a cabo.
+
+\section{Ejemplos}
+
+\input{10_Capitulo/ejemplos/1/1}
+
+\input{10_Capitulo/ejemplos/2/2}
+
+\input{10_Capitulo/ejemplos/3/3}

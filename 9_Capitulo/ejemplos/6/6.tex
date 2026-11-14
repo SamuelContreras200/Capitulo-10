@@ -1,0 +1,95 @@
+\textbf{Ejemplo 5}\\
+Se plantea la construcción de un puente y se han presentado dos proyectos, el primero es un puente colgante a un costo de 850 millones COP y, cada año habrá que darle mantenimiento a la plataforma de asfalto a un costo de 3 millones COP; se estima que las reparaciones serán cada vez mayores y que éstas aumentarán de precio en 2 millones COP cada año, además, cada 5 años habrá que cambiar los cables que sostienen el puente y su costo será de 100 millones COP y, no se prevé que éste valor vaya a cambiar. La segunda alternativa es un puente en concreto a un costo de 900 millones COP y, cada 3 años habrá que reacondicionar las bases a un costo fijo de 25 millones COP; el costo anual de mantenimiento se puede considerar fijo en 5 millones COP. Con una tasa del 25\% pav, determinar la mejor alternativa.\\
+
+
+%%%%%%%%%%%%%%%%%%% EJERCICIO 5 %%%%%%
+
+%\newpage %USAR SOLO SI EL SOLUCION QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+\textbf{Solución.}\\
+%La tabla ira centrada
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	%Creacion de la cuadricula de 3 columnas \end{flushleft}
+	\begin{longtable}[H]{|C{0.3\linewidth}|C{0.3\linewidth}|C{0.3\linewidth}|}
+		%Creamos una linea horizontal
+		\hline
+		%%%%%%%%%% INICIO TITULO
+        %%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación periodo focal}}   \\ \hline
+		\multicolumn{3}{|c|} {$pf : 0 \hspace{0.5em} pav$} \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%Lo que se hace aqui es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO DE MATEMATICAS
+		%Cada & hace referencia al paso de la siguiente columna
+		Puente colgante &Puente colgante & i$_{2a}$= ? pav\\ 
+		$P_{0}= $ -850.000.000 COP&i$_{1a}$= 25\% pav & i$_{2b}$= ? pav\\
+		$P_{1}= $ -3.000.000 COP&n$_{1a}$= 5 pav&$VPN_{A} =$ ? COP\\ 
+		$P_{2}= $ -5.000.000 COP&n$_{2a}$= 5 pav&$VPN_{B} =$ ? COP\\ 
+        $P_{3}= $ -7.000.000 COP&Puente en concreto\\ 
+		$P_{4}= $ -9.000.000 COP&i$_{1b}$= 25 \% pav \\ 
+		$P_{5}= $ -111.000.000 COP&n$_{1b}$= 5 pav\\
+		Puente en concreto&\\
+		$P_{6}= $ -900.000.000 COP&\\
+		$P_{7}= $ -5.000.000 COP&\\
+		$P_{8}= $ -5.000.000 COP&\\
+		$P_{9}= $ -28.000.000 COP&\\
+		$P_{10}= $ -5.000.000 COP&\\
+		$P_{11}= $ -5.000.000 COP&\\
+  \hline
+		%%%%%%%%%% FIN DE MATEMATICAS
+		%%%%% FIN DECLARACION DE VARIABLES
+
+  		%%%%% INICIO DECLARACION FORMULAS
+  
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
+		%Mezclamos 3 columnas y ponermos el dibujo
+		%%%%%%%%%%%%% INSERCION DE LA IMAGEN
+		%Deberan descargar las imagenes respectivas del drive y pegarlas en la carpeta
+		%n_capitulo/img/ejemplos/1/capitulo1ejemplo1.pdf  (el /1/ es el numero del ejemplo) 
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5 , scale=2, width=350px, height=480px]{9_Capitulo/ejemplos/6/exportados/Ejemplo5.png}} \\ \hline
+		%%%%%%%%%%%%% FIN INSERCION DE IMAGEN
+		%%%%%FIN FLUJO DE CAJA
+
+
+
+		%%%%% INICIO DECLARACION FORMULAS
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}    \\ \hline
+		%%%%%%%%%%% FIN TITULO
+		%%%%%%%%%%% INICIO MATEMATICAS
+		\multicolumn{3}{|c|}{$\sum F_{n}(1+i)^{-n} $\hspace{0.3cm} \textit{Valor presente neto}} \\
+		\multicolumn{3}{|c|}{$(1+i_{1})^{m_{1}} = (1+i_{2})^{m_{2}}$\hspace{0.3cm} \textit{Equivalencia de tasas}} \\ \hline
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% INICIO DESARROLLO MATEMATICO
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}  \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO MATEMATICAS
+		\multicolumn{3}{|c|}{$(1+0.25)^{5} = (1+i_{2})^{1}$ \hspace{0.5cm} $(1+0.25)^{3} = (1+i_{2})^{1}$}\\
+		\multicolumn{3}{|c|}{$i_{2} = 205.1757812\% pav$ \hspace{0.5cm} $i_{2} = 95.3125\% pav $} \\
+		\multicolumn{3}{|c|}{$VPN_{A} = -850 - \frac{100}{2.051757812} - (\frac{3}{0.25} - \frac{2}{0.0625})$ \hspace{0.5cm}  $VPN_{B} = -900 - \frac{5}{0.25} - \frac{25}{0.953125}$}\\
+		\multicolumn{3}{|c|}{$VPN_{A} = - 942.7$ \textit{COP}  \hspace{0.5cm} $VPN_{B} = - 946.23 $ \textit{COP}}\\ \hline
+
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% FIN DESARROLLO MATEMATICO
+		%%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO RESPUESTA MATEMATICA
+		\multicolumn{3}{|c|}{La mejor elección es construir el puente colgante.}  \\ \hline
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% FIN RESPUESTA
+	\end{longtable}
+	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline %USARLO SI CREES QUE ES NECESARIO
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,203 @@
+\part{Capítulo once}
+\graphicspath{ {11_Capitulo/img/exportados/}, {W_Varios/2_Portada_capitulos/} }
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 11
+%----------------------------------------------------------------------------------------
+
+\chapterimage{ima2} % Chapter heading image
+
+\chapter{Tasa interna de retorno TIR}
+
+\section{Mapa Mental}
+\begin{center}
+	% 	tamaño maximo de imagenes, una cuartilla, aprox: 13,97 cm X 20,00
+	% cm, mínimo: 10.5 x 16.4 cm
+	\includegraphics[height=5.65cm]{explicacion/mapamentalCap11.pdf}
+\end{center}
+
+%----------------------------------
+%Tabla de fórmulas
+%------------------------------------------
+
+\newpage
+\section{{Fórmulas del capítulo}}
+\vspace{\baselineskip}
+\begin{spacing}{1}
+	\begin{center}
+		\begin{tabular}{ |p{4.5cm}|p{4.5cm}| p{4.5cm}|}
+			\hline
+			\rowcolor[HTML]{FFB183}
+			\begin{center}\textbf{\fontsize{9}{11}Fórmula} \end{center} & \begin{center} \textbf{\fontsize{9}{11}Nombre} \end{center} & \begin{center} \textbf{\fontsize{9}{11}Excel} \end{center} \\ \hline
+			\text{\fontsize{9}{11}F = $P(1+i)^n$}
+			                                                                 & Valor futuro                                                     & VF(i;n;;VA,0)                                                   \\ \hline
+
+			j = im                                                           & Tasa nominal anual vencida                                              & TASA.NOMINAL(i;m)                                               \\ \hline
+
+			P = $\frac{F}{(1 + i)^{n}}$                                      & Valor presente                                                   & VA(i;n;;VF,0)                                                   \\ \hline
+
+			${(1 + i_{1})^{m_{1}}}$ = ${(1 + i_{2})^{m_{2}}}$                & Equivalencia de tasas periódicas                                         & TASA(m;;-1;1+i)                                                 \\ \hline
+
+			VPN =	$\sum F_{n}(1+i)^{-n}$ \                                   & Valor Presente Neto                                              & -                                                               \\ \hline
+		\end{tabular}
+	\end{center}
+\end{spacing}
+
+
+\section{Introducción}
+La tasa interna de retorno (TIR) es uno de los índices más aceptados por el público, porque mide la rentabilidad de una inversión. Sin embargo, para los especialistas no tiene la misma aceptación porque se presta a errores. %% L: Revisar expresión
+En algunas ocasiones, la decisión que se toma con el VPN no coincide con la decisión que se toma con la TIR. Esto ocurre ya que la TIR no se aplica correctamente y en tales casos, es necesario utilizar otra técnica para lograr que los resultados obtenidos con la TIR coincidan con los resultados que se obtengan con el VPN.
+
+Financieramente, la TIR es la tasa a la cual los flujos de caja son descontados de forma tal que los ingresos y los egresos sean iguales; desde el punto de vista matemático, la TIR es la tasa a la cual el VPN se hace cero.\\[0.3mm]
+
+Existen dos clases de flujos de caja: los flujos convencionales y los flujos no convencionales.\\
+
+\textbf{Los flujos convencionales} son aquellos donde primero aparecen los egresos y después aparecen los ingresos o viceversa.\vspace{0.2cm}
+
+\textbf{Los flujos no convencionales} son aquellos donde figuran intercalados los ingresos y los egresos.
+\\
+Ejemplos de flujos de caja \\
+
+\textbf{Figura 1} \\
+\textit{Flujo convencional}
+\begin{center}
+	\includegraphics[scale=1]{explicacion/Graf1Cap11.pdf}
+\end{center}
+\text{}\\\\
+\textbf{Figura 2} \\
+\textit{Flujo no convencional}
+\begin{center}
+	\includegraphics[scale=1]{explicacion/Graf2Cap11.pdf}
+\end{center}
+
+El procedimiento que se usa para calcular la TIR varía dependiendo del número de alternativas a analizar y de la forma en que se encuentren distribuidos los ingresos y los egresos a lo largo del horizonte de planificación; veamos algunos ejemplos: \\
+
+\input{11_Capitulo/ejemplos/1/1}
+
+
+\section{TMAR}
+Para complementar el concepto de la tasa mínima atractiva de retorno (TMAR), se dice que su valor debe ser un poco más alto que la tasa a la cual el inversionista realiza sus inversiones normalmente; si la TMAR iguala escasamente la tasa del inversionista, él preferirá seguir realizando sus inversiones normales. Por otra parte, para que este acepte invertir en un proyecto nuevo, deberá ofrecérsele una tasa mayor que compense los riesgos que produzca la ejecución de dicho proyecto. Por último, la tasa del inversionista debe ser superior a la inflación local porque, si el inversionista coloca su dinero por debajo de la inflación, está obteniendo una rentabilidad real negativa. Ese excedente sobre la tasa del inversionista se denomina el \textbf{\textit{premio al riesgo o spread}}.\\
+
+En general, podemos concluir que si \textbf{TIR>TMAR} el proyecto es \textbf{bueno} en cambio, si \textbf{TIR<TMAR} el proyecto \textbf{no es aconsejable.}\\
+
+\textbf{Inconsistencia entre el VPN y la TIR}\\
+
+Ocurren situaciones en las que un proyecto es seleccionado usando el VPN y cuando se usa la TIR es seleccionado otro proyecto diferente. Esta inconsistencia se muestra en el siguiente ejemplo:\\
+
+%%\newpage
+\input{11_Capitulo/ejemplos/2/2}
+
+
+
+\textbf{Disyuntiva VPN y TIR}\\
+En el ejemplo anterior, según el índice VPN se debe optar por el proyecto B, pero según el índice TIR es mejor el proyecto A. Entonces ¿Cúal de los dos proyectos es mejor para invertir?\\
+Para solucionar esta disyuntiva, hay que analizar lo que ocurre con los dineros que están invertidos en cada proyecto.\\
+
+\begin{center}
+	\includegraphics[scale=0.8]{explicacion/Graf4Cap11.pdf}
+\end{center}
+En el proyecto A la inversión de 1\text{.}160\text{.}000 COP solo dura un mes porque al cabo de un año está reintegrando 1\text{.}000\text{.}000 COP y en los 5 años restantes reintegra de a 50\text{.}000 COP anuales. En cambio en el proyecto B la inversión de 1\text{.}160\text{.}000 COP dura 6 años, y aunque estuvo colocado el dinero a una tasa menor el resultado final es que la ganancia en pesos de hoy es superior a la que genera el proyecto A.\\
+
+El problema básicamente consiste en que la TIR solo mide la rentabilidad de los dineros que permanecen invertidos en el proyecto y no toma en cuenta los dineros que son liberados o los toma en cuenta suponiendo que los reinvierte a la misma tasa del proyecto lo cual es un error porque no necesariamente los dineros se reinvierten a la misma tasa del proyecto.\\
+
+Para solucionar esta dificultad se debe tener en cuenta la reinversión y esta nueva TIR recibe el nombre de TIR Modificada que se representa por TIRM.\\
+
+Se deja en claro que, la TIRM elimina la inconsistencia de ordenamiento entre la TIR y el VPN en la gran mayoría de los casos, sin embargo, quedan unos pocos casos en los cuales será necesario utilizar una variante de la TIRM que se denomina TIRM ponderada.\\
+
+\textbf{Cálculo de la TIRM}\\
+
+Se trasladan al punto inicial todos los egresos utilizando la tasa de financiación que puede ser la misma del mercado de colocación y se traslada a valor final todos los ingresos utilizando la tasa \textbf{TIO.}\\
+Recordando que \textbf{TIO} es la tasa del mejor proyecto que se sacrifica a fin de realizar otra actividad.
+
+
+
+
+
+\section{TIR + R}
+
+Si los traslados de los ingresos a valor final y los traslados de los egresos a valor presente se hacen a una sola tasa, a la tasa del inversionista, esta TIR recibe el nombre de TIR+R que significa tasa interna de retorno con reinversión.
+
+Al mirar la gráfica de flujo de caja del proyecto A se observa que solo hay un egreso y que además está ubicado en el punto inicial, entonces solo nos queda trasladar al punto 6 (punto final) todos los ingresos, y para ello utilizaremos una tasa del 3\% período anual vencido que es la tasa del inversionista.
+\begin{center}
+	$
+		Ingresos = 1\text{.}000\text{.}000 COP(1+0.03)^{5}+ 50\text{.}000 COP(\frac{(1+0.03)^{5}-1}{0.03})=  1\text{.}424\text{.}730,87 COP
+	$
+\end{center}
+%%\newpage
+Nuestro flujo de caja queda modificado así:\\
+\begin{center}
+	\includegraphics[scale=1.1]{explicacion/Graf3Cap11.pdf}
+\end{center}
+Utilizando la fórmula del interés compuesto podemos hallar la tasa del diagrama de flujo anterior así:
+\begin{center}
+	$\text{F} = P(1+i)^n \hspace{0.3cm} \textit{Valor futuro}$\\[0.5cm]
+	$1\text{.}424\text{.}730,87 COP =  1\text{.}160\text{.}000 COP(1+i_{TIRM})^{6}$ \\[0.2cm]
+
+\end{center}
+De donde se obtiene que: TIRM(A) = 3,485\% período año vencido.\\
+
+En el proyecto B TIRM es la misma TIR puesto que no ha habido oportunidad para hacer reinversiones, por lo tanto, TIRM(B) es igual a 4,38\% período año vencido y se concluye que si          TIRM(B) > TIRM(A) entonces el proyecto B es mejor que el proyecto A. Esta conclusión concuerda con la decisión que se toma usando el VPN como instrumento de análisis.\\
+
+Hay ocasiones, aunque muy escasas, en que la TIRM aún no es suficiente para producir el mismo ordenamiento que el que produce el VPN, esto podría presentarse al comparar alternativas mutuamente excluyentes que tienen diferente costo, en tales circunstancias debemos hacer que las alternativas tengan el mismo costo y para ello le agregamos a la alternativa de menor costo una inversión adicional por un valor igual a la diferencia entre las dos alternativas. Esta alternativa adicional se evalúa a la tasa TIO.\\
+
+
+\input{11_Capitulo/ejemplos/3/3}
+
+El lector observará que hemos buscado por diferentes caminos que los dos ordenamientos coincidan. \\
+Cuando los instrumentos de análisis VPN y TIR producen diferentes resultados es porque se ha cometido un error en la forma de aplicar la TIR. El verdadero ordenamiento es el que produce el VPN, por esta razón debe calcularse la TIR por diferentes métodos hasta que esté de acuerdo con el ordenamiento del VPN (el valor de la TIRM siempre se encuentra entre la TIR y la tasa de reinversión).\\
+
+\subsubsection{TIR múltiple}
+
+En un proyecto, el flujo de caja puede darse de dos maneras: primero, pueden haber egresos (uno o varios) y después aparecen los ingresos (uno o varios). Este tipo de proyectos recibe el nombre de proyectos convencionales y solo tienen una tasa, pero puede suceder que en un proyecto los egresos y los ingresos aparezcan en forma entreverada, en este caso puede suceder que existan varias tasas y el proyecto recibe el nombre de no convencional.
+
+%desde aca empiezo yo ------------------- $
+\section{Regla de los signos de Descartes}
+
+
+Un polinomio ordenado es aquel en que los exponentes están en orden ascendente o en orden descendente, por ejemplo: \\
+
+\begin{center}
+	$3x^{6}+12x^{4}-25x^{3}+16x+35=0$
+\end{center}
+
+Podemos asumir que los términos en $x^{5}$  y en $x^{2}$ tienen coeficiente igual a cero por eso no figuran. \\
+
+Según Descartes, un polinomio ordenado no tiene más raíces positivas que el número de veces en que los coeficientes cambian de signo, esto significa que la ecuación anterior a lo sumo tiene 2 raíces porque los dos primeros términos son positivos, el tercer término es negativo, esto implica un cambio de signo, el cuarto término vuelve a ser positivo lo cual implica otro cambio de signo y el quinto término sigue siendo positivo, en consecuencia en total hay dos cambios de signo y esto significa que a lo sumo habrá 2 raíces. (Los sitios donde los coeficientes cambian de signo se señalan con flechas)\\
+
+\textbf{Observación:} Al decir que a lo sumo hay 2 raíces positivas, significa que puede haber una sola raíz o que haya 2 raíces positivas, pero en ningún caso puede haber más de 2 raíces positivas o que haya ninguna raíz positiva.\\
+%Evitar negar dos veces en la observación anterior.
+
+Otro ejemplo:
+\begin{center}
+	$
+		26(1+i)^{-7}+2(1+i)^{-3}-\underbrace{14(1+i)^{-2}}_{}+\underbrace{16(1+i)^{-1}}_{}-\underbrace{40}_{}=0
+	$
+\end{center}
+
+La ecuación anterior a lo sumo tiene 3 raíces positivas porque hay tres cambios de signo en los coeficientes, los cuales hemos señalado con los corchetes. \\
+
+Cuando se trabaja manualmente la mejor forma de encontrar las raíces es construir la gráfica de la ecuación y las raíces son aquellos puntos de corte de la curva sobre el eje X. Cuando trabajamos manualmente no nos interesa construir la parte negativa del eje X porque una raíz negativa significa que un proyecto tiene una tasa negativa, es decir, que si se realiza el proyecto va a dar una pérdida y no es lógico que una persona invierta un dinero con la intención de perder. \\
+
+Como comentario adicional, una ecuación que tenga una curva de la siguiente forma: \\
+\textbf{Figura 3} \\
+\textit{Curva con raíz imaginaria y raíz real negativa}
+\begin{center}
+	\includegraphics[scale=1]{explicacion/Graf5Cap11.pdf}
+\end{center}
+
+Matemáticamente, tiene una raíz negativa y una raíz imaginaria. El campo de las finanzas no tiene raíces porque ya dijimos que descartábamos las raíces negativas y además debemos descartar las raíces imaginarias porque en finanzas solo se trabaja con los números reales.\\
+
+Ahora estudiemos la forma de encontrar el valor de las raíces, para ello tomemos el siguiente caso: \\\\
+
+\input{11_Capitulo/ejemplos/4/4}
+
+
+\section{Tasa interna de retorno incremental TIRI}
+
+Para calcular la TIR, es indispensable que existan tanto ingresos como egresos. Sin embargo, al seleccionar entre varias alternativas utilizando la TIR, puede darse el caso de proyectos mutuamente excluyentes en los cuales solo se conocen los egresos, pero no los ingresos o, en caso de conocerse, son mínimos en comparación con los egresos. En estas condiciones, no es posible conocer la rentabilidad de ninguno de los proyectos. Sin embargo, sí es posible obtener una rentabilidad de la diferencia entre las inversiones. Esta tasa se compara con la tasa mínima que el inversionista desea obtener, la cual representamos como TMAR, y nos ayuda a tomar una decisión.\\
+
+\input{11_Capitulo/ejemplos/5/5}
+
+\input{11_Capitulo/ejemplos/6/6}
+
+\input{11_Capitulo/ejemplos/7/7}

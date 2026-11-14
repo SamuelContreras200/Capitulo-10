@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%EJERCICIO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Ejemplo 11}\\
+Para el día 15 de abril de 1998 debe haberse reunido la suma de 900{.}000 COP. Para tal fin, se efectúan depósitos trimestrales de \(R \; \text{COP}\) c/u en un fondo que paga el 32\% nominal anual trimestre vencido. Si el primer depósito se hace el 15 de enero de 1997 y el último el 15 de octubre de 1997, calcular el valor del depósito trimestral y elaborar una tabla de capitalización.\\		
+
+\textbf{Solución 11}\\
+% La tabla irá centrada
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}% Márgenes de las celdas
+	% Creación de la cuadrícula de 3 columnas
+	\begin{longtable}[H]{|c|c|c|}
+		% Creamos una línea horizontal
+		\hline
+		% Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		\hline
+		%%%%% INICIO ASIGNACIÓN PERÍODO FOCAL %%%%%%%
+		%%%%%%%%%% INICIO TÍTULO
+		% Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}} \\ \hline
+		%%%%%%%%%% FIN TÍTULO
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		\multicolumn{3}{|c|}{$pf : 7 \; \textit{ptv}$} \\ \hline
+		\hline
+		%%%%%%%%%% INICIO TÍTULO
+		% Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}} \\ \hline
+		%%%%%%%%%% FIN TÍTULO
+		%%%%%%%%%% INICIO DE MATEMÁTICAS
+		\hline
+		\cellcolor[HTML]{FFB183}\textbf{Valores monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Valores no monetarios} & 
+		\cellcolor[HTML]{FFB183}\textbf{Incógnitas} \\ \hline
+		$VF = 900{.}000 \; \text{COP}$ & $n = 4 \; \textit{ptv}$ & $R = ? \; \text{COP}$ \\ 
+		$ $ & $j = 32\% \; \textit{natv}$ & \\ 
+		$ $ & $i = 8\% \; \textit{ptv}$ & \\ \hline
+		%%%%%%%%%% FIN DE MATEMÁTICAS
+		%%%%% FIN DECLARACIÓN DE VARIABLES
+
+		\rowcolor[HTML]{FFB183}
+		\hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
+		\multicolumn{3}{|c|}{ \includegraphics[trim=-78 -5 -78 -5, width=14cm]{7_Capitulo/img/ejemplos/11/11_1.pdf} } \\ \hline
+		%%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}} \\ \hline
+		%%%%%%%%%%%%% FIN INSERCIÓN DE IMAGEN
+		%%%%% FIN FLUJO DE CAJA
+
+		\multicolumn{3}{|c|}{ $VF = R_{n}(1+i)^{n-1}$ Valor futuro de un Gradiente Geométrico si \(g = i\) } \\ \hline
+		
+		%%%%%% INICIO DESARROLLO MATEMÁTICO
+		\rowcolor[HTML]{FFB183}
+		\hline
+		%%%%%%%%%% INICIO TÍTULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}} \\ \hline
+		%%%%%%%%%% FIN TÍTULO
+		%%%%%%%%%% INICIO MATEMÁTICAS
+		\multicolumn{3}{|c|}{ $900{.}000 \; \text{COP} = R_{4} (1 + 0{.}08)^{2}$ } \\ 
+		\multicolumn{3}{|c|}{ $R = 171{.}235{,}19 \; \text{COP}$ } \\ \hline
+
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% FIN DESARROLLO MATEMÁTICO
+		%%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		\hline
+		%%%%%%%%%% INICIO TÍTULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}} \\ \hline
+		%%%%%%%%%% FIN TÍTULO
+		%%%%%%%%%% INICIO RESPUESTA MATEMÁTICA
+		\multicolumn{3}{|c|}{ \includegraphics[trim=-78 -5 -78 -5]{7_Capitulo/img/ejemplos/11/11_2.pdf} } \\ \hline
+	\end{longtable}
+	% Se crean dos líneas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline % USARLO SI CREES QUE ES NECESARIO
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,110 @@
+%%%%%%%%%%% NO OLVIDAR COLOCAR ESTE COMENTARIO CON EL NUMERO DE EJERCICIO %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% EJERCICIO 3 %%%%%%
+%%Text bf para negrilla , el \\ es para el salto de linea.
+%%El primer \\ hace un espacio en el texto y el 2 \\ crea otro espacio
+\textbf{Ejemplo 3}\newline
+Se plantea la construcción de un puente y se han presentado dos proyectos, el primero es un puente colgante a un costo de 850.000.000 COP, cada año habrá que darle mantenimiento a la plataforma de asfalto a un costo de 3.000.000 COP, se estima que las reparaciones serán cada vez mayores y que éstas aumentarán de precio todos los años en 2.000.000 COP y cada 5 años habrá que cambiar los cables que sostienen el puente a un costo fijo de 100.000.000 COP, el segundo proyecto es un puente en concreto a un costo de 900.000.000 COP, cada 3 años habrá que reacondicionar las bases a un costo de 25.000.000 COP, el costo anual de mantenimiento se puede considerara fijo en 5.000.000 COP. Con una tasa del 24\% determinar la mejor alternativa.
+
+\textbf{Solución.}\\
+\begin{center}
+
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	%Creación de la cuadricula
+	\begin{longtable}{|c|c|c|}
+		%Creamos una linea horizontal
+		\hline
+		%Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO ASIGNACIÓN FECHA FOCAL %%%%%%%
+		%%%%%%%%%% INICIO TITULO
+		%Lo que se hace aquí es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación período focal}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		\multicolumn{3}{|c|}{$pf : 0 pmv$} \\ \hline
+		%Definimos el color de la primera fila
+		\rowcolor[HTML]{FFB183}
+		%%%%% INICIO DECLARACIÓN DE VARIABLES %%%%%%%
+		%%%%%%%%%% INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}\\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO SUBTITULO
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Variables monetarias}}    &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{FFB183}\textbf{Variables conceptuales}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{FFB183}\textbf{Incógnitas}} \\ \hline
+		%%%%%%%%%% FIN SUBTITULO
+		%%%%%%%%%% INICIO DE MATEMÁTICAS
+        $P_A = 850{.}000{.}000\text{ COP}$ & $i = \text{24\% pav}$ & $CAUE_A =  \text{? COP}$ \\
+		$R_m =  3{.}000{.}000\text{ + 2.000.000 *n COP}$ & $n_A = \text{5 pav}$ & $CAUE_B =  \text{? COP}$ \\
+		$PR = 100{.}000{.}000\text{ COP}$ & $n_B = \text{3 pav}$ &  \\ 
+		$P_B = 900{.}000{.}000\text{ COP}$ &  & \\ 
+		$CMO = 25{.}000{.}000\text{ COP}$ &  & \\
+		$VS =  5{.}000{.}000\text{ COP}$ & & \\ \hline
+		%%%%%%%%%% FIN DE MATEMÁTICAS
+		%%%%% FIN DECLARACIÓN DE VARIABLES
+		%%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}}                                                                                  \\ \hline
+		%%%%%%%%%%%%% INSERCIÓN DE LA IMAGEN
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/3/Ejemplo_3_A.pdf}}\\ \hline
+		\multicolumn{3}{|c|}{\includegraphics[trim=-5 -5 -5 -5, width=10.5cm, keepaspectratio]{10_Capitulo/img/ejemplos/PDFs/3/Ejemplo_3_B.pdf}}\\ \hline
+		%%%%%%%%%%%%% FIN INSERCIÓN DE IMAGEN
+		%%%%%FIN FLUJO DE CAJA
+
+		%%%%% INICIO DECLARACIÓN FORMULAS
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}                                                                                    \\ \hline
+		%%%%%%%%%%% FIN TITULO
+		%%%%%%%%%%% INICIO MATEMÁTICAS
+		\multicolumn{3}{|c|}{$VP=R\frac{1-(1+i)^{-n}}{i} \text{ Valor presente serie uniforme vencida}$}\\ 
+		\multicolumn{3}{|c|}{$VF=R\frac{(1+i)^{n}-1}{i} \text{ Valor futuro serie uniforme vencida}$}\\
+		\multicolumn{3}{|c|}{$CAUE = \sum Ingresos_{anualizados} - \sum Egresos_{anualizados} \text{ CAUE expresado como una sumatoria}$}\\
+		\hline                                         
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% INICIO DESARROLLO MATEMÁTICO
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}\\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO MATEMÁTICAS
+		
+		Alternativa A & \multicolumn{2}{c|}{Alternativa B}\\ \hline
+  
+		Dividir los 100.000.000 en 5 pagos anuales uniformes & \multicolumn{2}{c|}{Dividir los 25.000.000 en 3 pagos anuales uniformes} \\
+  
+		${R={100{.}000{.}000} * \frac{0,24}{1-(1+0,24)^{5}} = 8{.}186{.}585}COP $  & \multicolumn{2}{c|}{  ${R={25{.}000{.}000} * \frac{0,24}{1-(1+0,24)^{3}} = 3{.}146{.}923}COP $ }\\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+        
+        CAUE Alternativa A & \multicolumn{2}{c|}{CAUE Alternativa B} \\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+        
+        $CAUE_{A} = -33{.}000{.}000 - 8{.}186{.}585$ & \multicolumn{2}{c|}{
+        $CAUE_{B} = -5{.}000{.}000 - 3{.}146{.}923$
+        }\\
+
+        $ $  & \multicolumn{2}{c|}{}\\
+
+        $CAUE_{A} = -41{.}186{.}585 COP$ & \multicolumn{2}{c|}{
+        $CAUE_{B} = -8{.}146{.}923 COP$
+        }\\
+
+		\hline
+
+		%%%%%%%%%% FIN MATEMÁTICAS
+		%%%%%% FIN DESARROLLO MATEMÁTICO
+		%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}    \\ \hline
+
+		\multicolumn{3}{|c|}{La alternativa que representa menores perdidas es la B.} \\ 
+        \hline
+		%%%%% FIN RESPUESTA
+		
+	\end{longtable}
+	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO X %%%%%%%%%%%%%%%%%%%%%%%%%%%

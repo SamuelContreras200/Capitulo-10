@@ -1,0 +1,94 @@
+\textbf{Ejemplo 2}\\
+Un proyecto requiere de una inversión inicial de 100.000 COP y se cree que generará unos ingresos de 65.000 COP al final del primer año y de 75.000 COP al final del segundo año. Evaluar el proyecto para el inversionista A cuya tasa es del 20\% período año vencido, y para el inversionista B cuya tasa es del 40\% período año vencido.\\
+
+
+%%%%%%%%%%%%%%%%%%% EJERCICIO 2 %%%%%%
+
+%\newpage %USAR SOLO SI EL SOLUCION QUEDA SOLO Y ES NECESARIO BAJARLO A LA SIGUIENTE PAGINA
+\textbf{Solución.}\\
+%La tabla ira centrada
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}% Margenes de las celdas
+	%Creacion de la cuadricula de 3 columnas \end{flushleft}
+	\begin{longtable}[H]{|C{0.3\linewidth}|C{0.3\linewidth}|C{0.3\linewidth}|}
+		%Creamos una linea horizontal
+		\hline
+        %%%%% INICIO FLUJO DE CAJA
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{1. Asignación periodo focal}}   \\ \hline
+		\multicolumn{3}{|c|} {$pf: 0pv$} \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO TITULO
+		%Lo que se hace aqui es mezclar las 3 columnas en una sola
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{2. Declaración de variables}}   \\ \hline
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Variables monetarias}}                   & \multicolumn{1}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Variables Conceptuales}}                   & \multicolumn{1}{|c|}{\cellcolor[HTML]{FFB183}\textbf{Variables incógnitas}}                                                                         \\ \hline
+
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO DE MATEMATICAS
+		%Cada & hace referencia al paso de la siguiente columna
+
+		$P_{0} = -100{.}000COP(P=Egresos)$ & $i_{A} = TIO_{A} = 20\% pav \equiv 0.2 pav$ & $VPN_{A}= ? COP$ \\ [1em]
+		$F_{1} = 65{.}000COP(F=Ingresos)$ & $i_{B} = TIO_{B} = 40\% pav \equiv 0.4 pav$ & $VPN_{B}= ? COP$ \\ [1em]
+		$F_{2} = 75{.}000COP$ & $n_{a} = n_{b} = 6 pmv$ & \\ [1em]
+		& $n_{0} = 0 pav$ & \\[1em]
+		& $n_{1} = 1 pav$ & \\[1em]
+		& $n_{2} =  2pav$ & \\
+
+        \hline
+		%%%%%%%%%% FIN DE MATEMATICAS
+		%%%%% FIN DECLARACION DE VARIABLES
+
+
+  	%%%%% INICIO DECLARACION FORMULAS
+  
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{3. Diagrama de flujo de caja}} \\ \hline
+		%Mezclamos 3 columnas y ponermos el dibujo
+		%%%%%%%%%%%%% INSERCION DE LA IMAGEN
+		%Deberan descargar las imagenes respectivas del drive y pegarlas en la carpeta
+		%n_capitulo/img/ejemplos/1/capitulo1ejemplo1.pdf  (el /1/ es el numero del ejemplo)
+		\multicolumn{3}{|c|}{ \includegraphics[trim=-5 -5 -5 -5 , scale=1, width=245px, height=425px]{9_Capitulo/ejemplos/2/exportados/DiaCEjem2Cap9(1).png} }   \\ \hline
+		%%%%%%%%%%%%% FIN INSERCION DE IMAGEN
+		%%%%%FIN FLUJO DE CAJA
+
+
+
+		%%%%% INICIO DECLARACION FORMULAS
+		%%%%%%%%%%% INICIO TITULO
+		\rowcolor[HTML]{FFB183}
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{4. Declaración de fórmulas}}    \\ \hline
+		%%%%%%%%%%% FIN TITULO
+		%%%%%%%%%%% INICIO MATEMATICAS
+		\multicolumn{3}{|c|}{$\sum F_{n}(1+i)^{-n} $\hspace{0.3cm} \textit{Valor presente neto}} \\ \hline
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% INICIO DESARROLLO MATEMATICO
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{5. Desarrollo matemático}}       \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO MATEMATICAS
+		\multicolumn{3}{|c|}{$VPN_{A} = -100{.}000COP(1+0pav)^{0pav}  + 65{.}000COP(1+0,2pav)^{-1pav} + 75{.}000COP(1+0,2pav)^{-2pav}$} \\
+		\multicolumn{3}{|c|}{$VPN_{A} = 6{.}250COP$} \\
+		\multicolumn{3}{|c|}{$VPN_{B} = -100{.}000COP(1+0pav)^{0pav}  + 65{.}000COP(1+0,4pav)^{-1pav} + 75{.}000COP(1+0,4pav)^{-2pav}$} \\
+		\multicolumn{3}{|c|}{$VPN_{B} = -15{.}506COP$} \\ \hline
+
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% FIN DESARROLLO MATEMATICO
+		%%%%%% INICIO RESPUESTA
+		\rowcolor[HTML]{FFB183}
+		%%%%%%%%%%INICIO TITULO
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{FFB183}\textbf{6. Respuesta}}   \\ \hline
+		%%%%%%%%%% FIN TITULO
+		%%%%%%%%%% INICIO RESPUESTA MATEMATICA
+
+        \multicolumn{3}{|c|}{Para el inversionista A, VPN > 0, es decir que, se recomienda realizar el proyecto}\\
+        \multicolumn{3}{|c|}{Para el inversionista B, VPN < 0, es decir que, no se recomienda realizar el proyecto} \\ \hline
+
+		%%%%%%%%%% FIN MATEMATICAS
+		%%%%%% FIN RESPUESTA
+	\end{longtable}
+	%Se crean dos lineas en blanco para que no quede el siguiente texto tan pegado
+	%\newline \newline %USARLO SI CREES QUE ES NECESARIO
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%FIN EJERCICIO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%
